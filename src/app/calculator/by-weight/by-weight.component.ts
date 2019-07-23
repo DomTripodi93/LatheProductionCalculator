@@ -32,7 +32,6 @@ export class ByWeightComponent implements OnInit, OnDestroy {
     let cutTo = 48;
     let cycleTime: number
 
-
     this.calc.latheForm = new FormGroup({
       'cycleTime': new FormControl(cycleTime),
       "type": new FormControl(this.type[0]),

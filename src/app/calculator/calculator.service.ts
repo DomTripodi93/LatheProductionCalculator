@@ -227,7 +227,7 @@ export class CalculatorService {
         let ftWeight = inWeight * 12;
         this.feet = this.weight/ftWeight;
         barSizedHold.barLength = this.averageBar
-        barSizedHold.noBars = Math.floor(this.feet/this.averageBar)
+        barSizedHold.noBars = Math.floor(this.feet*12/this.averageBar)
         fullBars.push(barSizedHold);
         barHold.barLength = this.feet%this.averageBar;
         barHold.noBars = 1
@@ -252,7 +252,7 @@ export class CalculatorService {
         let ftWeight = inWeight * 12;
         this.feet = this.weight/ftWeight;
         barSizedHold.barLength = this.averageBar
-        barSizedHold.noBars = Math.floor(this.feet/this.averageBar)
+        barSizedHold.noBars = Math.floor(this.feet*12/this.averageBar)
         this.fullBars.push(barSizedHold);
         barHold.barLength = this.feet%this.averageBar;
         barHold.noBars = 1
