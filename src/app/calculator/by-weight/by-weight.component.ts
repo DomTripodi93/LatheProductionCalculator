@@ -37,7 +37,7 @@ export class ByWeightComponent implements OnInit, OnDestroy {
       "type": new FormControl(this.type[0]),
       "averageBar": new FormControl(averageBar),
       "cutTo": new FormControl(cutTo),
-      "material" : new FormControl(this.calc.materials[0]),
+      "material" : new FormControl(this.calc.densities[0].material),
       "dia": new FormControl(dia),
       "weight": new FormControl(weight),
       'cutOff': new FormControl(cutOff, Validators.required),
