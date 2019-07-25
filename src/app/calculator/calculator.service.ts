@@ -30,17 +30,6 @@ export class CalculatorService {
     averageBar: number;
     feet: number;
 
-
-    materials =[
-        "Stainless Steel",
-        "Steel",
-        "Carbon Steel",
-        "Aluminum",
-        "Monel",
-        "Delrin",
-        "A286"
-    ];
-
     densities = [
         {
             material: "Stainless Steel", 
