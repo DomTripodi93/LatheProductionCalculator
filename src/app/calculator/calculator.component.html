@@ -2,6 +2,17 @@
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
         <h1>Welcome to the Lathe Production Estimater V2!</h1>
-        <h4></h4>
+        <h3>Use the navigation above, or choose an option below to calculate your production</h3>
+        <br>
+        <h4>If you only have the weight, type, and size of your material, and would like to find the length of bars:</h4>
+        <button routerLink="/length" class="btn btn-primary">Length By Weight</button>
+        <h4>If you only have the weight, type, and size of your material, and part overall length, cutoff size, and amount faced, (and cycle time(optional)), find out how many parts can be produced (and how many machine hours it will take to produce them):</h4>
+        <button routerLink="/weight" class="btn btn-primary">Production By Weight</button>
+        <h4>If you have the size of the full bars recieved, and part overall length, cutoff size, and amount faced, (and cycle time(optional)), find out how many parts can be produced (and how many machine hours it will take to produce them):</h4>
+        <button routerLink="/job" class="btn btn-primary">Job Production</button>
+        <h4>If you only have a few cut bars remaining, find out how many parts can be produced (and how many machine hours it will take to produce them):</h4>
+        <button routerLink="/remaining" class="btn btn-primary">Remaining Production</button>
+        <br><br>
+        <h5><strong>(If you have any full length bars, but are only looking for remaining quantity/machine hours, the "Job Production" option is reccommended, as it can handle full bars and short bars. The Remaining Production Only takes short bars, and does not take a "cut to" length.)</strong></h5>
     </div>
 </div>
