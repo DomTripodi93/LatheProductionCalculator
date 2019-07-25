@@ -59,6 +59,10 @@ export class CalculatorService {
             density: ".098"
         },
         {
+            material: "Inconel",
+            density: ".301"
+        },
+        {
             material: "Monel", 
             density: ".318"
         },
