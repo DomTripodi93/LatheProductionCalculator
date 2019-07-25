@@ -28,7 +28,7 @@ export class LengthComponent implements OnInit, OnDestroy{
 
     this.calc.latheForm = new FormGroup({
       "type": new FormControl(this.type[0]),
-      "material" : new FormControl(this.calc.materials[0]),
+      "material" : new FormControl(this.calc.densities[0].material),
       "dia": new FormControl(dia),
       "weight": new FormControl(weight),
       'barEnd': new FormControl(barEnd, Validators.required),
